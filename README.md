@@ -1,8 +1,11 @@
-
+Build 
+```
+docker build -t motocom-api
+docker run -d -p 8080:80 --name motocom-container motocom-api
 ```
 
-```Motocom
-
+Motocom
+```
 POST /api/robot/connect
 POST /api/robot/servo/on
 POST /api/robot/servo/off
@@ -33,16 +36,4 @@ POST /api/robot/job/star
 GET /api/robot/job/current
 POST /api/robot/job/set-current
 GET /api/robot/task/{taskId}/current-line
-
-
-
-docker tag local-image:tagname new-repo:tagname
-docker push new-repo:tagname
-
-docker push transon2305/motocom:tagname
-Public view
-
-
-docker pull transon2305/motocom
-
-```# motocom
+```
