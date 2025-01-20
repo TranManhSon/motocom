@@ -8,7 +8,6 @@ namespace MyRobotAPI.Services
 {
     [Route("api/[controller]")]
     [ApiController]
-    [EnableCors("AllowSpecificOrigins")] // Áp dụng chính sách CORS
     public class RobotController : ControllerBase
     {
         private readonly RobotService _robotService;
