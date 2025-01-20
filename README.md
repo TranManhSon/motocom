@@ -6,7 +6,7 @@ docker run -d -p 8080:80 --name motocom-container motocom-api
 
 Motocom
 ```
-POST /api/robot/connect
+POST /api/robot/connect 
 POST /api/robot/servo/on
 POST /api/robot/servo/off
 GET /api/robot/jobs

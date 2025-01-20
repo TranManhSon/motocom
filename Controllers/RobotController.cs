@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 using System.Collections;
 using MOTOCOM;
 using MyRobotAPI.Models;
@@ -7,6 +8,7 @@ namespace MyRobotAPI.Services
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowSpecificOrigins")] // Áp dụng chính sách CORS
     public class RobotController : ControllerBase
     {
         private readonly RobotService _robotService;
