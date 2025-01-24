@@ -43,11 +43,13 @@ namespace MOTOCOM
             m_IPAddress = IPAddress;
             m_Path = Path;
 
+            Console.WriteLine("IP Address: " + m_IPAddress);
             //** Initialize communication **
             short ret;
-
+            Console.WriteLine("CommDir: " + m_CommDir);
             //try to get a handle
             m_Handle = CMotocom.BscOpen(m_CommDir, 256);
+            Console.WriteLine("Handle: " + m_Handle);
 
             if (m_Handle >= 0)
             {

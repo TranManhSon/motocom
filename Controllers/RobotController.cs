@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Cors;
 using System.Collections;
 using MOTOCOM;
 using MyRobotAPI.Models;
+using System.Diagnostics;
 
 namespace MyRobotAPI.Services
 {
@@ -10,6 +11,7 @@ namespace MyRobotAPI.Services
     [ApiController]
     public class RobotController : ControllerBase
     {
+        string myVariable = "Debugging variable";
         private readonly RobotService _robotService;
 
         public RobotController()
@@ -21,9 +23,14 @@ namespace MyRobotAPI.Services
         [HttpPost("connect")]
         public IActionResult Connect([FromBody] string ipAddress)
         {
+                if (string.IsNullOrWhiteSpace(ipAddress))
+                    {
+                        return BadRequest("IP Address is required and cannot be empty.");
+                    }
             try
             {
                 _robotService.Connect(ipAddress, Environment.CurrentDirectory);
+                Console.WriteLine(ipAddress); // In ra màn hình giá trị của biến
                 return Ok($"Connected to robot at {ipAddress}");
             }
             catch (Exception ex)
@@ -166,6 +173,7 @@ namespace MyRobotAPI.Services
         [HttpGet("status/update")]
         public IActionResult UpdateStatus()
         {
+            Debug.WriteLine("update-status-api");
             try
             {
                 _robotService.UpdateStatus();

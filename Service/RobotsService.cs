@@ -11,6 +11,7 @@ namespace MyRobotAPI.Services
         // Kết nối đến robot
         public void Connect(string ipAddress, string startupPath)
         {
+            Console.WriteLine("Connecting to robot..." + startupPath);
             _yasnac = new CYasnac(ipAddress, startupPath);
         }
 
@@ -80,7 +81,7 @@ namespace MyRobotAPI.Services
         // Cập nhật trạng thái
         public void UpdateStatus()
         {
-            if (_yasnac == null) throw new InvalidOperationException("Robot is not connected.");
+            if (_yasnac == null) throw new InvalidOperationException("Robot is not12 connected.");
             _yasnac.UpdateStatus();
         }
 

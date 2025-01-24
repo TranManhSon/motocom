@@ -31,3 +31,12 @@
 /Users/ManhSon/Work/Motocom/Motocom/obj/Debug/net7.0/Motocom.pdb
 /Users/ManhSon/Work/Motocom/Motocom/obj/Debug/net7.0/Motocom.genruntimeconfig.cache
 /Users/ManhSon/Work/Motocom/Motocom/obj/Debug/net7.0/ref/Motocom.dll
+/Users/ManhSon/Work/Motocom/Motocom/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/ManhSon/Work/Motocom/Motocom/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/ManhSon/Work/Motocom/Motocom/bin/Debug/net7.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/ManhSon/Work/Motocom/Motocom/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/ManhSon/Work/Motocom/Motocom/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/Users/ManhSon/Work/Motocom/Motocom/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
+/Users/ManhSon/Work/Motocom/Motocom/bin/Debug/net7.0/System.Diagnostics.DiagnosticSource.dll
+/Users/ManhSon/Work/Motocom/Motocom/bin/Debug/net7.0/System.Text.Encodings.Web.dll
+/Users/ManhSon/Work/Motocom/Motocom/bin/Debug/net7.0/runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll

@@ -15,7 +15,6 @@ namespace MyRobotAPI
             services.AddControllers();
             services.AddSingleton<RobotService>();
 
-
             // Thêm chính sách CORS
             services.AddCors(options =>
             {
